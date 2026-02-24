@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import AuthContext, { AuthProvider } from './context/AuthContext';
+import  { AuthProvider } from './context/AuthContext';
 import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -28,3 +28,4 @@ function App() {
 }
 
 export default App;
+
