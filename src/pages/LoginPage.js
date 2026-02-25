@@ -34,6 +34,7 @@ const LoginPage = () => {
       let response;
       if (isLogin) {
         response = await authService.login(formData.email, formData.password);
+        console.log("response ",response)
       } else {
         response = await authService.register(
           formData.email,
@@ -43,6 +44,7 @@ const LoginPage = () => {
       }
 
       const { admin } = response.data.data;
+      console.log("admin",admin)
       login(admin, null);
       Swal.fire({
         title: 'Success!',
@@ -136,3 +138,4 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
+
