@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://k4media-image-gallery.onrender.com" || 'http://localhost:5000/api';
-
+console.log("api base url ",API_BASE_URL)
 const api = axios.create({
   baseURL: API_BASE_URL,
   withCredentials: true,
@@ -46,4 +46,5 @@ export const imageService = {
 };
 
 export default api;
+
 
